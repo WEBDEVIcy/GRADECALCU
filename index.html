@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  
+
+
+    <div class="intro">
+        <h1 id="logo" class="logo">GRADE <span>CALC  </span>  <i class="fas fa-calculator"></i></h1>
+        <button class="btn" onclick="calculateGPA()">Calculate GPA</button>
+        <button class="btn2" onclick="refreshPage()">Clear</button>
+        
+
+    </div>
+
+    <div class="grades">
+
+<div class="card">
+    <div class="card2">
+        <label class="label" for="english">English</label>
+        <input type="number" id="english"  name="english" class="input-border" placeholder="Input Grades">
+    </div>
+</div>
+          
+
+<div class="card">
+    <div class="card2">
+        <label class="label" for="math">Math</label>
+        <input type="number" id="math"  name="math" class="input-border" placeholder="Input Grades">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card2">
+        <label class="label" for="science">Science</label>
+        <input type="number" id="science"  name="science" class="input-border" placeholder="Input Grades">
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card2">
+        <label class="label" for="history">History</label>
+        <input type="number" id="history"  name="history" class="input-border" placeholder="Input Grades">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card2">
+        <label class="label" for="art">Art</label>
+        <input type="number" id="art"  name="art" class="input-border" placeholder="Input Grades">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card2">
+        <label class="label" for="music">Music</label>
+        <input type="number" id="music"  name="music" class="input-border" placeholder="Input Grades">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card2">
+        <label class="label" for="pe">P.E</label>
+        <input type="number" id="pe"  name="pe" class="input-border" placeholder="Input Grades">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card2">
+        <label class="label" for="TLE">TLE</label>
+        <input type="number" id="TLE"  name="TLE" class="input-border" placeholder="Input Grades">
+    </div>
+  </div>
+
+
+
+
+<div id="cardContainer">
+  <div id="cardContent">
+    <span class="close-button">&times;</span>
+    <div id="gpa-card" class="cardResult">
+      <h1>RESULT</h1>
+       <h5 class="displayname" id="Contentnamedisplay"></h5>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>Subjects</th>
+            <th>Grades</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>English</td>
+            <td><span id="englishOutput"></span></td>
+            <td><span id="englishStatus"></span></td>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td><span id="mathOutput"></span></td>
+            <td><span id="mathStatus"></span></td>
+          </tr>
+          <tr>
+            <td>Science</td>
+            <td><span id="scienceOutput"></span></td>
+            <td><span id="scienceStatus"></span></td>
+          </tr>
+          <tr>
+            <td>History</td>
+            <td><span id="historyOutput"></span></td>
+            <td><span id="historyStatus"></span></td>
+          </tr>
+          <tr>
+            <td>Art</td>
+            <td><span id="artOutput"></span></td>
+            <td><span id="artStatus"></span></td>
+          </tr>
+          <tr>
+            <td>Music</td>
+            <td><span id="musicOutput"></span></td>
+            <td><span id="musicStatus"></span></td>
+          </tr>
+          <tr>
+            <td>P.E</td>
+            <td><span id="peOutput"></span></td>
+            <td><span id="peStatus"></span></td>
+          </tr>
+          <tr>
+            <td>TLE</td>
+            <td><span id="TLEOutput"></span></td>
+            <td><span id="TLEStatus"></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Average: <span id="ave"></span></p>
+      <h2 id="result"></h2>
+    </div>
+  </div>
+</div>
+
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
